@@ -1,12 +1,10 @@
 A JavaFX Based Offline quiz application that can take MCQ Exam from the selected questions (Randomly Sorted Questions) with a highly interesting and secured email-based registration and login system for both the examinee and the admin. Then the Result will also be available in an excel file. This desktop app is built for the teachers or admin who wants to test their examinees/candidates(n-numbers of the candidate) with MCQ’s types of questions in a face-to-face viva.
  
 
-###  **The technology used:**
- > JavaFX, XML, Scene building Tools (in a few cases), API (different types of API).
-* **TOOLS**:
-> NetBeans,FXML
-* **Language**:
-> JAVA
+###  
+* **The Technology Used:** JavaFX, XML, API (different types of API), Text file.
+* **TOOLS**: NetBeans,FXML, Scene building Tools (in a few cases)
+* **Language**: JAVA
 
 ### features :
 
