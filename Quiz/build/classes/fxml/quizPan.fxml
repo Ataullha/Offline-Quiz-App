@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="234.0" prefWidth="372.0" style="-fx-background-color: #445589;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.quizPanController">
+   <children>
+      <AnchorPane prefHeight="179.0" prefWidth="282.0" style="-fx-background-color: #BE4DBF; -fx-border-color: BLACK;" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label fx:id="QT" alignment="CENTER" layoutX="68.0" layoutY="14.0" prefHeight="33.0" prefWidth="148.0" text="QUIZ TITLE" textFill="WHITE" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="NOQ" alignment="CENTER_RIGHT" layoutX="81.0" layoutY="43.0" prefHeight="33.0" prefWidth="141.0" text="20" textFill="#04ff00">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font></Label>
+            <Button fx:id="SQ" layoutX="116.0" layoutY="85.0" mnemonicParsing="false" onAction="#startQuiz" prefHeight="33.0" prefWidth="97.0" style="-fx-background-color: white;" text="START QUIZ">
+               <textFill>
+                  <LinearGradient endX="0.009478672985781977" endY="1.0" startY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </Button>
+            <Label layoutX="77.0" layoutY="48.0" prefHeight="23.0" prefWidth="131.0" text="NUMBER OF QUESTIONS :" textFill="#fff7f7">
+               <font>
+                  <Font name="System Italic" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="69.0" opacity="0.0" prefHeight="23.0" prefWidth="131.0" text="Time :" textFill="#fff7f7">
+               <font>
+                  <Font name="System Italic" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="TIME" alignment="CENTER_RIGHT" layoutX="-59.0" layoutY="64.0" opacity="0.0" prefHeight="33.0" prefWidth="141.0" text="20" textFill="#04ff00">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="32.0" layoutY="69.0" opacity="0.0" prefHeight="23.0" prefWidth="74.0" text="min" textFill="#fff7f7">
+               <font>
+                  <Font name="System Italic" size="11.0" />
+               </font>
+            </Label>
+            <Button fx:id="DEL" layoutX="116.0" layoutY="134.0" mnemonicParsing="false" onAction="#deleteAQuiz" prefHeight="33.0" prefWidth="97.0" text="Delete" />
+            <Button fx:id="AS" layoutX="116.0" layoutY="85.0" mnemonicParsing="false" onAction="#AddStudentForEachQuiz" prefHeight="33.0" prefWidth="97.0" text="Add Student" />
+            <Button fx:id="GS" layoutX="116.0" layoutY="85.0" mnemonicParsing="false" onAction="#getResultInAExcelFile" prefHeight="33.0" prefWidth="97.0" text="Get Result" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

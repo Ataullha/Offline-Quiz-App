@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0" prefWidth="708.0" style="-fx-background-color: #445589;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.AddQuizFXMLController">
+   <children>
+      <Button fx:id="AddNextQues" layoutX="460.0" layoutY="578.0" mnemonicParsing="false" onAction="#setNextQuestion" prefHeight="36.0" prefWidth="107.0" style="-fx-background-color: white;" text="NEXT" />
+      <Button fx:id="submitQuestion" layoutX="579.0" layoutY="578.0" mnemonicParsing="false" onAction="#completeQuestionSetting" prefHeight="36.0" prefWidth="107.0" style="-fx-background-color: white;" text="SUBMIT" wrapText="true">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+      <Label fx:id="numberOfCurrentQuestion" alignment="CENTER" layoutX="74.0" layoutY="14.0" prefHeight="36.0" prefWidth="118.0" style="-fx-border-color: WHITE;" text="1" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="242.0" prefHeight="19.0" prefWidth="62.0" text="Option A" textFill="#00ff09">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="295.0" prefHeight="19.0" prefWidth="62.0" text="Option B" textFill="#00ff09">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="348.0" prefHeight="19.0" prefWidth="62.0" text="Option C" textFill="#00ff09">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="401.0" prefHeight="19.0" prefWidth="62.0" text="Option D" textFill="#00ff09">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="option1radio" layoutX="78.0" layoutY="519.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="118.0" text="Option A" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="option2radio" layoutX="202.0" layoutY="519.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="118.0" text="Option B" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="option3radio" layoutX="354.0" layoutY="519.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="118.0" text="Option C" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="option4radio" layoutX="499.0" layoutY="519.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="118.0" text="Option D" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="74.0" layoutY="464.0" prefHeight="19.0" prefWidth="183.0" text="Select The Correct Option" textFill="#00ffc9">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Separator layoutX="75.0" layoutY="506.0" opacity="0.11" prefHeight="5.0" prefWidth="582.0" style="-fx-background-color: none;" />
+      <JFXTextArea fx:id="option4" layoutX="74.0" layoutY="420.0" prefHeight="28.0" prefWidth="612.0" style="-fx-background-color: white;" />
+      <JFXTextArea fx:id="option3" layoutX="74.0" layoutY="367.0" prefHeight="28.0" prefWidth="612.0" style="-fx-background-color: white;" />
+      <JFXTextArea fx:id="option2" layoutX="74.0" layoutY="314.0" prefHeight="28.0" prefWidth="612.0" style="-fx-background-color: white;" />
+      <JFXTextArea fx:id="option1" layoutX="74.0" layoutY="261.0" prefHeight="28.0" prefWidth="612.0" style="-fx-background-color: white;" />
+      <JFXTextArea fx:id="question" labelFloat="true" layoutX="74.0" layoutY="53.0" prefHeight="189.0" prefWidth="612.0" style="-fx-background-color: white;">
+         <font>
+            <Font name="Consolas Bold" size="15.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</AnchorPane>

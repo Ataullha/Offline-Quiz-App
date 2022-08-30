@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="525.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.SETQUIZTITLEController">
+   <children>
+      <AnchorPane layoutY="8.0" minHeight="0.0" minWidth="0.0" prefHeight="554.0" prefWidth="703.0" style="-fx-background-color: #445589;">
+         <children>
+            <Label alignment="CENTER" layoutX="168.0" layoutY="56.0" prefHeight="43.0" prefWidth="375.0" text="SET QUIZ DETAILS" textFill="#00ff0d">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="quizTitle" alignment="CENTER" layoutX="200.0" layoutY="167.0" prefHeight="51.0" prefWidth="310.0" promptText="(e.g. C QUIZ)">
+               <font>
+                  <Font name="Cambria Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Button fx:id="startQuiz" layoutX="388.0" layoutY="427.0" mnemonicParsing="false" onAction="#saveTitleAndStartQuiz" prefHeight="51.0" prefWidth="122.0" style="-fx-background-color: white;" text="START">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <TextField fx:id="numberOfQuestion" alignment="CENTER" layoutX="200.0" layoutY="277.0" prefHeight="38.0" prefWidth="317.0" promptText="(e.g. 40) (Minimum 2 Questions)">
+               <font>
+                  <Font name="Cambria Bold" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="totalTimeForQuiz" alignment="CENTER" layoutX="200.0" layoutY="366.0" prefHeight="28.0" prefWidth="310.0" promptText="(e.g. 30)(Minimum 1 min)">
+               <font>
+                  <Font name="Cambria Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="286.0" layoutY="242.0" prefHeight="19.0" prefWidth="154.0" text="NUMBER OF QUESTION" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="283.0" layoutY="332.0" prefHeight="19.0" prefWidth="162.0" text="TOTAL TIME FOR QUIZ(min)" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="270.0" layoutY="131.0" prefHeight="19.0" prefWidth="162.0" text="QUIZ TITLE" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </Label>
+            <Button fx:id="backbutton1" layoutX="200.0" layoutY="435.0" mnemonicParsing="false" onAction="#backbuttoadminhome" prefHeight="36.0" prefWidth="107.0" style="-fx-background-color: white;" text="CANCEL" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

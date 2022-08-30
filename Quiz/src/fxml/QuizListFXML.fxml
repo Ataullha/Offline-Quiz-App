@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.QuizListFXMLController">
+   <content>
+      <FlowPane fx:id="mainPannel" hgap="20.0" prefHeight="521.0" prefWidth="676.0" style="-fx-background-color: #445589;" vgap="20.0" />
+   </content>
+</ScrollPane>
